@@ -1,0 +1,179 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #8ecae6;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #023047;
+    color: #fb8500;
+    padding-top: 1.2em;
+    min-height: 70px;
+    border-bottom: #ffb703 3px solid;
+}
+
+header a {
+    color: #fb8500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+header #branding h1 {
+    text-shadow: 0.2rem 0.2rem #000000;
+    margin: 0;
+}
+
+header #branding {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 1rem;
+}
+
+header a:hover {
+    transition: ease-in 0.2s;
+    color: #ffb703;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url(../img/main.jpg) no-repeat;
+    background-position: 25% 25%;
+    background-size: cover;
+    text-align: center;
+    color: #fefae0;
+    font-weight: bold;
+}
+
+#showcase h1 {
+    margin-top: 6rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#showcase p {
+    font-size: 1.5rem;
+}
+
+#newsletter {
+    padding: 0.2rem;
+    color: white;
+    background-color: #023047;
+}
+
+
+#newsletter .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#newsletter input[type="email"] {
+    padding: 0.4em;
+    height: 2em;
+    width: 15rem;
+}
+
+.button1 {
+    height: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-color: #fb8500;
+    color: #000000;
+    font-size: small;
+    border: 0;
+}
+
+.button1:hover{
+    background-color: #ffb703;
+    transition: ease-in 0.1s;
+}
+
+
+#boxes {
+    margin-top: 1.2rem;
+}
+
+#boxes .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#boxes .box {
+    width: 30%;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fb8500;
+    background-color: #023047;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .box p {
+        margin-bottom: 30px;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: large;
+    }
+}
